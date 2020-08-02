@@ -33,4 +33,9 @@ class FunctionsForListManipulation:
     # Task 4
     @staticmethod
     def return_third_element(list_of_elements):
-        pass
+        size_of_list = len(list_of_elements)
+        if size_of_list < 3:
+            return "Error: IndexOutOfBound"
+        else:
+            return list_of_elements[2]
+
