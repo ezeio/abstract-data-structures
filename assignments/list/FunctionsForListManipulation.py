@@ -32,7 +32,12 @@ class FunctionsForListManipulation:
     # Task 3
     @staticmethod
     def return_second_element(list_of_elements):
-        pass
+        size_of_list = len(list_of_elements)
+        if size_of_list < 2:
+            return "Error: IndexOutOfBound"
+        else:
+            return list_of_elements[1]
+
 
     # Task 4
     @staticmethod
