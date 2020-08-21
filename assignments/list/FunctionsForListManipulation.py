@@ -18,8 +18,11 @@ class FunctionsForListManipulation:
     # Task 1
     @staticmethod
     def return_last_element(list_of_elements):
-        pass
-
+        size_of_list = len(list_of_elements)
+        if size_of_list < 1:
+            return "Error: IndexOutOfBound"
+        else:
+            return list_of_elements[size_of_list - 1]
     # Task 2
     @staticmethod
     def return_first_element(list_of_elements):
