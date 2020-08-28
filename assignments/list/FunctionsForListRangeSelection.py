@@ -15,14 +15,17 @@ class FunctionForListRangeSelection:
     # Task 1
     @staticmethod
     def sort_list(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements
 
     # Task 2
     @staticmethod
     def get_list_of_first_three_sorted_elements(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements[:3]
 
     # Task 3
     @staticmethod
     def get_list_of_last_two_sorted_elements(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements[-2:]
