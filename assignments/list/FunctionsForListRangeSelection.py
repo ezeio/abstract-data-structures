@@ -8,6 +8,9 @@
 # These tasks deal on range of indexes.
 # You first have to sort the elements by calling the method sort_list and then use the range
 # notation [2:5] (you can use negative range notation too [:-1])
+# I defined a method called sort_list. The method accepts a list as a parameter.
+# When the method is invoked, and the list argument is passed in, the sort method of the list is invoked.
+# The sort method arranges the elements in the list in its natural order. Then, the sorted list is returned.
 
 
 class FunctionForListRangeSelection:
@@ -15,14 +18,17 @@ class FunctionForListRangeSelection:
     # Task 1
     @staticmethod
     def sort_list(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements
 
     # Task 2
     @staticmethod
     def get_list_of_first_three_sorted_elements(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements[:3]
 
     # Task 3
     @staticmethod
     def get_list_of_last_two_sorted_elements(list_of_elements):
-        pass
+        list_of_elements.sort()
+        return list_of_elements[-2:]
